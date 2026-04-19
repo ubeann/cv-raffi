@@ -35,7 +35,7 @@ export default function FloatingNav() {
   ];
 
   return (
-    <nav className="fixed bottom-8 left-1/2 -translate-x-1/2 z-[100] transition-transform duration-300">
+    <nav className="fixed bottom-8 left-1/2 -translate-x-1/2 z-100 transition-transform duration-300">
       <div className="flex items-center gap-1 p-2 rounded-full bg-background/80 backdrop-blur-md border border-border shadow-lg shadow-black/20">
         {links.map((link) => (
           <a

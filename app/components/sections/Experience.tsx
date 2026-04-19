@@ -35,7 +35,7 @@ export default function Experience() {
               <ul className="text-base text-subtle font-mono space-y-4 leading-relaxed max-w-3xl">
                 {exp.points.map((point: string, j: number) => (
                   <li key={j} className="flex items-start gap-4">
-                    <ChevronRight className="w-5 h-5 text-accent flex-shrink-0 mt-[2px] opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                    <ChevronRight className="w-5 h-5 text-accent shrink-0 mt-0.5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                     <span>{point}</span>
                   </li>
                 ))}
