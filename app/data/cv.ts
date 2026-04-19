@@ -7,7 +7,7 @@ export const CV_DATA: CVDataStructure = {
     email: "raffiachmad93@gmail.com",
     linkedin: "https://linkedin.com/in/raffi-achmad-r/",
     github: "https://github.com/RaffiAchmadR",
-    metrics: ["Next.js & React", "Flutter & Firebase", "UI/UX Architecture", "Data Analytics"]
+    metrics: ["Next.js & React", "Flutter & Firebase", "UI/UX Designer", "Data Analytics"]
   },
   foundation: {
     education: [
