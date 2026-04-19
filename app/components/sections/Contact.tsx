@@ -1,51 +1,40 @@
-"use client";
+import Reveal from "../ui/Reveal";
+import { CV_DATA } from "@/data/cv";
+import { ArrowRight } from "lucide-react";
 
 export default function Contact() {
-  const email = process.env.NEXT_PUBLIC_EMAIL || "your.email@example.com";
-  const github = process.env.NEXT_PUBLIC_GITHUB_URL || "#";
-  const linkedin = process.env.NEXT_PUBLIC_LINKEDIN_URL || "#";
+  const { contact } = CV_DATA;
 
   return (
-    <section id="contact" className="py-20 bg-slate-900 px-4">
-      <div className="max-w-4xl mx-auto text-center">
-        <h2 className="text-4xl font-bold text-white mb-6">Let's Connect</h2>
-        <p className="text-lg text-slate-300 mb-12 max-w-2xl mx-auto">
-          I'm always interested in hearing about new projects and opportunities. Feel free to
-          reach out!
-        </p>
+    <section id="contact" className="flex flex-col border-b border-border bg-[#09090b] relative z-20 overflow-hidden">
+      {/* Decorative Grid Background */}
+      <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCI+CjxyZWN0IHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMjcyNzJhIiBzdHJva2Utd2lkdGg9IjAuNSIvPgo8L3N2Zz4=')] opacity-20 pointer-events-none"></div>
 
-        {/* Contact Links */}
-        <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-          <a
-            href={`mailto:${email}`}
-            className="px-6 py-3 bg-purple-600 hover:bg-purple-700 text-white font-semibold rounded-lg transition-colors duration-200"
-          >
-            📧 Email Me
-          </a>
-          <a
-            href={linkedin}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition-colors duration-200"
-          >
-            💼 LinkedIn
-          </a>
-          <a
-            href={github}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-6 py-3 bg-slate-700 hover:bg-slate-800 text-white font-semibold rounded-lg transition-colors duration-200"
-          >
-            🔗 GitHub
-          </a>
-        </div>
+      <div className="p-6 md:p-24 py-32 flex flex-col items-center justify-center text-center relative z-10 min-h-[60vh]">
+        <Reveal className="w-full flex flex-col items-center">
+          <span className="font-mono text-accent text-sm tracking-widest uppercase mb-8 border border-accent px-4 py-2 bg-accent/10">
+            [ STATUS: AVAILABLE FOR HIRE ]
+          </span>
 
-        {/* Footer */}
-        <div className="mt-16 pt-8 border-t border-slate-700">
-          <p className="text-slate-400 text-sm">
-            © {new Date().getFullYear()} {process.env.NEXT_PUBLIC_FULL_NAME || "Your Name"}. Built with Next.js & Bun.
+          <h2 className="text-5xl md:text-7xl lg:text-8xl font-black uppercase tracking-tighter leading-[0.9] max-w-5xl mb-8">
+            {contact?.heading || "Let's build something impactful."}
+          </h2>
+
+          <p className="text-subtle text-lg md:text-xl max-w-2xl mb-12 font-mono leading-relaxed">
+            {contact?.subheading || "Currently open for new opportunities. Whether you have a question or just want to say hi, I'll try my best to get back to you!"}
           </p>
-        </div>
+
+          <a
+            href={`mailto:${contact?.email}`}
+            className="group relative px-8 py-5 border-2 border-border hover:border-accent bg-background overflow-hidden transition-colors focus:outline-none focus:ring-4 focus:ring-accent"
+          >
+            <div className="absolute inset-0 bg-accent translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out"></div>
+            <span className="relative z-10 flex items-center gap-3 font-mono font-bold uppercase text-lg group-hover:text-background transition-colors">
+              Initiate Comms
+              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+            </span>
+          </a>
+        </Reveal>
       </div>
     </section>
   );

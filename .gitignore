@@ -134,4 +134,7 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+# Github skip files
+.github/skills
+
 # End of https://www.toptal.com/developers/gitignore/api/macos,windows,linux,visualstudiocode,nextjs,dotenv,vercel
