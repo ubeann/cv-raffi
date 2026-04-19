@@ -66,7 +66,7 @@ export default function Hero() {
   );
 
   return (
-    <section ref={containerRef} className="hero-section min-h-screen flex flex-col border-b border-border relative">
+    <section id="hero" ref={containerRef} className="hero-section min-h-screen flex flex-col border-b border-border relative">
       <header className="grid grid-cols-1 md:grid-cols-[1fr_3fr] flex-1 relative z-10">
         <div className="p-6 md:p-8 flex flex-col justify-between border-b md:border-b-0 md:border-r border-border gap-8 bg-background">
           <div className="hero-line font-mono text-accent text-xs uppercase tracking-widest">[OP.SDE_01]</div>

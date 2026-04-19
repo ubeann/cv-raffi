@@ -4,6 +4,8 @@ import Projects from "./components/sections/Projects";
 import Foundation from "./components/sections/Foundation";
 import Leadership from "./components/sections/Leadership";
 import Contact from "./components/sections/Contact";
+import FloatingNav from "./components/ui/FloatingNav";
+import ScrollProgress from "./components/ui/ScrollProgress";
 
 export const metadata = {
   title: "RAFFI ACHMAD R. — SDE // CV",
@@ -12,6 +14,8 @@ export const metadata = {
 export default function Home() {
   return (
     <div className="flex flex-col w-full border-x border-border min-h-screen bg-background text-foreground overflow-hidden">
+      <ScrollProgress />
+      <FloatingNav />
       <Hero />
       <Experience />
       <Projects />

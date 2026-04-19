@@ -1,11 +1,12 @@
 import Reveal from "../ui/Reveal";
 import { CV_DATA } from "@/data/cv";
+import { ArrowRight } from "lucide-react";
 
 export default function Contact() {
   const { contact } = CV_DATA;
 
   return (
-    <section className="flex flex-col border-b border-border bg-[#09090b] relative z-20 overflow-hidden">
+    <section id="contact" className="flex flex-col border-b border-border bg-[#09090b] relative z-20 overflow-hidden">
       {/* Decorative Grid Background */}
       <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCI+CjxyZWN0IHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMjcyNzJhIiBzdHJva2Utd2lkdGg9IjAuNSIvPgo8L3N2Zz4=')] opacity-20 pointer-events-none"></div>
 
@@ -25,12 +26,12 @@ export default function Contact() {
 
           <a
             href={`mailto:${contact?.email}`}
-            className="group relative px-8 py-5 border-2 border-border hover:border-accent bg-background overflow-hidden transition-colors"
+            className="group relative px-8 py-5 border-2 border-border hover:border-accent bg-background overflow-hidden transition-colors focus:outline-none focus:ring-4 focus:ring-accent"
           >
             <div className="absolute inset-0 bg-accent translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out"></div>
             <span className="relative z-10 flex items-center gap-3 font-mono font-bold uppercase text-lg group-hover:text-background transition-colors">
               Initiate Comms
-              <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </span>
           </a>
         </Reveal>
