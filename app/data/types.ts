@@ -38,9 +38,30 @@ export interface Leadership {
   description: string;
 }
 
+export interface ProjectLink {
+  live: string;
+  github: string;
+}
+
+export interface Project {
+  title: string;
+  description: string;
+  tech: string[];
+  links: ProjectLink;
+  image: string;
+}
+
+export interface ContactData {
+  heading: string;
+  subheading: string;
+  email: string;
+}
+
 export interface CVDataStructure {
   hero: HeroData;
   foundation: FoundationData;
   experience: Experience[];
   leadership: Leadership[];
+  projects: Project[];
+  contact: ContactData;
 }

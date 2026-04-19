@@ -1,7 +1,9 @@
 import Hero from "./components/sections/Hero";
-import Foundation from "./components/sections/Foundation";
 import Experience from "./components/sections/Experience";
+import Projects from "./components/sections/Projects";
+import Foundation from "./components/sections/Foundation";
 import Leadership from "./components/sections/Leadership";
+import Contact from "./components/sections/Contact";
 
 export const metadata = {
   title: "RAFFI ACHMAD R. — SDE // CV",
@@ -11,9 +13,11 @@ export default function Home() {
   return (
     <div className="flex flex-col w-full border-x border-border min-h-screen bg-background text-foreground overflow-hidden">
       <Hero />
-      <Foundation />
       <Experience />
+      <Projects />
+      <Foundation />
       <Leadership />
+      <Contact />
 
       {/* =========================================
           FOOTER
