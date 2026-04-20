@@ -70,8 +70,8 @@ export default function Hero() {
       <header className="grid grid-cols-1 md:grid-cols-[1fr_3fr] flex-1 relative z-10">
         <div className="p-6 md:p-8 flex flex-col justify-between border-b md:border-b-0 md:border-r border-border gap-8 bg-background">
           <div className="hero-line font-mono text-accent text-xs uppercase tracking-widest">[OP.SDE_01]</div>
-          <div className="hero-line w-full aspect-square bg-[#18181b] border border-border relative overflow-hidden flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-700">
-            <div className="parallax-bg absolute inset-0 bg-[url('https://images.unsplash.com/photo-1541560052-5e137f229371?q=80&w=600&auto=format&fit=crop')] bg-cover bg-center mix-blend-overlay opacity-30 will-change-transform transform-gpu scale-110"></div>
+          <div className="hero-line w-full aspect-square md:aspect-9/16 bg-[#18181b] border border-border relative overflow-hidden flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-700">
+            <div className="parallax-bg absolute inset-0 bg-[url('/img/profile.png')] bg-cover bg-top will-change-transform transform-gpu scale-110"></div>
             <span className="font-mono text-[10px] text-subtle absolute bottom-3 right-3 z-10 mix-blend-difference">[IMAGE_PLACEHOLDER]</span>
           </div>
         </div>
