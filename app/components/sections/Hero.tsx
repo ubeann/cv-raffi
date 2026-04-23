@@ -29,12 +29,14 @@ export default function Hero() {
         duration: 1,
         stagger: 0.15,
         delay: 0.2,
+        clearProps: "opacity,transform",
       })
       .from(".hero-metric", {
         y: 20,
         opacity: 0,
         duration: 0.8,
         stagger: 0.1,
+        clearProps: "opacity,transform",
       }, "-=0.5");
 
       // 2. PARALLAX EFFECTS (Scrubbed animations - Desktop Only)

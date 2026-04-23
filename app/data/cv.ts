@@ -121,6 +121,16 @@ export const CV_DATA: CVDataStructure = {
         github: "https://github.com/RaffiAchmadR"
       },
       image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800&auto=format&fit=crop"
+    },
+    {
+      title: "Hybrid Zero-DCE & DeblurGAN Model",
+      description: "Bachelor's thesis developing a hybrid deep learning pipeline integrating Zero-Reference Deep Curve Estimation (Zero-DCE) for illumination enhancement with DeblurGAN (FPN-MobileNet) for image sharpness restoration. Equipped with a Luminance Detector for adaptive processing. Achieved PSNR of 27.36 dB and SSIM close to 0.99 on CCTV footage and public datasets.",
+      tech: ["Deep Learning", "Computer Vision", "Zero-DCE", "DeblurGAN", "Python", "PSNR/SSIM Metrics"],
+      links: {
+        live: "",
+        github: "https://github.com/RaffiAchmadR"
+      },
+      image: "https://images.unsplash.com/photo-1532935702929-2a7df164ddea?q=80&w=987&auto=format&fit=crop"
     }
   ],
   contact: {
